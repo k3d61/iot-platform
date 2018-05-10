@@ -4,6 +4,9 @@ import com.google.gson.annotations.Expose;
 
 import javax.persistence.*;
 
+/**
+ * This table contains basic info of device
+ */
 @Entity
 @Table(name = "deviceAttributes", uniqueConstraints = @UniqueConstraint(columnNames={"name", "parentDevice_id"}))
 public class DeviceAttributeBean {

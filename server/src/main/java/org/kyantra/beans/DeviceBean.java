@@ -7,6 +7,10 @@ import org.hibernate.annotations.FetchMode;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * This table contains name of all the devices and their assiciated parent and
+ * owner Id
+ */
 @Entity
 @Table(name = "devices")
 public class DeviceBean {

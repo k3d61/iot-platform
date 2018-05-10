@@ -11,6 +11,12 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+/**
+ * This table is emptyright now,
+ * please add description what this table does?
+ *  comment added @since 9 May, 2018
+ */
 @Entity
 @Table(name = "cron")
 public class CronBean {
