@@ -12,6 +12,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+/**
+ * This table stores cookies from user session
+ */
 @Entity
 @Table(name = "session")
 public class SessionBean {

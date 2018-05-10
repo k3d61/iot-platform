@@ -5,6 +5,11 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.kyantra.beans.*;
 
+/**
+ *  In this class we provide classes to hibernet of
+ *  which we want tables to be created in database
+ *  
+ */
 public class HibernateService {
 
     private static HibernateService mService = new HibernateService();
