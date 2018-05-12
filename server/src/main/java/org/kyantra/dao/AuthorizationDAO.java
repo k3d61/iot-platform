@@ -6,6 +6,9 @@ import org.kyantra.beans.*;
 import javax.persistence.Query;
 import java.util.List;
 
+/**
+ *  This class checks whther given perticular user has rights over some unit or thing.
+ */
 public class AuthorizationDAO extends BaseDAO{
 
     private static AuthorizationDAO instance = new AuthorizationDAO();
