@@ -13,8 +13,8 @@ import javax.persistence.Table;
 
 
 /**
- * This table is emptyright now,
- * please add description what this table does?
+ * This table is empty right now in database,
+ * please add description what this the purpose of this table?
  *  comment added @since 9 May, 2018
  */
 @Entity

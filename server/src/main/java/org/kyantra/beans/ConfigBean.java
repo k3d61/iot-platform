@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 
 /**
- * contains AWS keys for server
+ * This table contains AWS keys for server
  */
 @Entity
 @Table(name="configset")

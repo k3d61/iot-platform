@@ -5,7 +5,10 @@ import com.google.gson.annotations.Expose;
 import javax.persistence.*;
 
 /**
- * This table contains basic info of device
+ * This table contains basic info of device like,
+ *  name the device eg, DHT,
+ *  type of device like integer/float/bol
+ *  actuator, whither the device is sensor or actuator
  */
 @Entity
 @Table(name = "deviceAttributes", uniqueConstraints = @UniqueConstraint(columnNames={"name", "parentDevice_id"}))

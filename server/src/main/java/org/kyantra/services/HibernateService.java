@@ -5,6 +5,8 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.kyantra.beans.*;
 
+import java.util.Properties;
+
 /**
  *  In this class we provide classes to hibernet of
  *  which we want tables to be created in database
@@ -34,6 +36,7 @@ public class HibernateService {
         StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
         sessionFactory = configuration.buildSessionFactory(builder.build());
     }
+
 
     public SessionFactory getSessionFactory() {
         return sessionFactory;

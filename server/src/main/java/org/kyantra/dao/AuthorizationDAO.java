@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  *  This class checks whther given perticular user has rights over some unit or thing.
+ *  Quesries are created with hibernet sessoion's query creator.
  */
 public class AuthorizationDAO extends BaseDAO{
 

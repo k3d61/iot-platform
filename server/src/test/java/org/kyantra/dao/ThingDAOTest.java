@@ -24,8 +24,6 @@ public class ThingDAOTest {
 
     @Test
     public void list() {
-        ThingDAO instance = new ThingDAO();
-        Session session = instance.getService().getSessionFactory().openSession();
 
 
     }

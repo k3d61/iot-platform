@@ -7,6 +7,9 @@ import org.kyantra.beans.ConfigBean;
 import javax.persistence.Query;
 import java.util.List;
 
+/**
+ *  This class makes use of ConfigBean
+ */
 public class ConfigDAO extends BaseDAO {
 
     private static ConfigDAO instance = new ConfigDAO();
@@ -22,9 +25,16 @@ public class ConfigDAO extends BaseDAO {
         return list.get(0);
     }
 
+    /**
+     *  Thhis method is used to,
+     *  Check if @param key and @param value pair exists in database,
+     *  if not present , add bith key values
+     *  if present, update only value
+     */
     public void set(String key, String value){
 
         ConfigBean configBean = get(key);
+
         if(configBean==null){
             configBean = new ConfigBean();
             configBean.setKey(key);
